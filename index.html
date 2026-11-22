@@ -1,50 +1,35 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Official website of Gliddiesgames, creator of Gliddies.">
-  <title>Gliddiesgames | Official Website</title>
-  <style>
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: grid;
-      place-items: center;
-      background: radial-gradient(circle at top, #183b65, #071323 75%);
-      color: #fff;
-      font-family: Arial, sans-serif;
-      text-align: center;
-    }
-    main { padding: 32px; }
-    h1 { font-size: clamp(36px, 7vw, 64px); margin-bottom: 12px; }
-    p { color: #c6d8ec; line-height: 1.7; }
-    a { color: #8ce8ff; }
-    .button {
-      display: inline-block;
-      padding: 14px 24px;
-      margin: 20px 0;
-      border: 1px solid #58c9ed;
-      border-radius: 12px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    footer { margin-top: 45px; font-size: 14px; }
-  </style>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#07091b"><meta name="description" content="Meet Gliddies: a colorful arcade adventure across Forest, Ocean and Space. Coming soon to Android.">
+  <meta property="og:title" content="Gliddies | Small worlds. Big adventures."><meta property="og:description" content="Three magical worlds. One glowing adventure. Coming soon to Android."><meta property="og:image" content="https://gliddiesgames.github.io/assets/gliddies-hero.png">
+  <title>Gliddies — Small worlds. Big adventures.</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="ambient ambient-a" aria-hidden="true"></div><div class="ambient ambient-b" aria-hidden="true"></div>
+  <header class="site-header"><a class="brand" href="/" aria-label="Gliddiesgames home"><span class="brand-mark">✦</span> GLIDDIES<span>GAMES</span></a>
+    <nav aria-label="Main navigation"><a href="#worlds">Worlds</a><a href="#features">The game</a><a href="/privacy/">Privacy</a></nav>
+    <a class="nav-cta" href="#coming-soon">COMING SOON <span aria-hidden="true">↗</span></a>
+  </header>
   <main>
-    <h1>Gliddiesgames</h1>
-    <p>Small worlds. Big adventures.</p>
-    <h2>Gliddies</h2>
-    <p>A colorful arcade adventure through Forest, Ocean and Space.</p>
-    <p>Coming soon to Android.</p>
-    <a class="button" href="/privacy/">Privacy Policy</a>
-    <footer>
-      <p>Contact: <a href="mailto:gliddiesgames@gmail.com">gliddiesgames@gmail.com</a></p>
-      <p>&copy; 2026 Gliddiesgames</p>
-    </footer>
+    <section class="hero" aria-labelledby="hero-title"><div class="hero-topline"><span class="status-dot"></span> AN ALL-NEW ARCADE ADVENTURE <span class="tiny-star">✧</span> ANDROID • COMING SOON</div>
+      <div class="hero-art-wrap"><div class="hero-glow"></div><img class="hero-art" src="assets/gliddies-hero.png" alt="Gliddies logo, three adorable characters, and magical Forest, Ocean and Space worlds" fetchpriority="high"></div>
+      <div class="hero-copy"><div class="eyebrow">THREE WORLDS. ENDLESS WONDER.</div><h1 id="hero-title">Small worlds.<br><em>Big adventures.</em></h1><p>Meet the Gliddies. Dash through enchanted forests, dive into dazzling oceans and soar across the stars in a bright, fast-paced arcade adventure.</p>
+      <div class="hero-actions"><a class="primary-button" href="#worlds">EXPLORE THE WORLDS <span>↗</span></a><a class="text-button" href="#features">DISCOVER THE GAME <span>↓</span></a></div></div>
+      <div class="scroll-cue">SCROLL TO EXPLORE <span>↓</span></div>
+    </section>
+    <section class="section worlds" id="worlds"><div class="section-heading"><div><div class="eyebrow">01 / DISCOVER</div><h2>Three worlds.<br><span>One magical journey.</span></h2></div><p>Every world brings a new atmosphere, new obstacles and more reasons to keep flying.</p></div>
+      <div class="world-grid"><article class="world-card forest"><div class="world-index">WORLD 01 <span>✦</span></div><div class="world-icon">🌿</div><h3>Forest</h3><p>Glide past ancient ruins, sparkling waterfalls and enchanted woodland surprises.</p><div class="world-tag">INTO THE GREEN <span>↗</span></div></article>
+      <article class="world-card ocean"><div class="world-index">WORLD 02 <span>✦</span></div><div class="world-icon">🫧</div><h3>Ocean</h3><p>Explore luminous reefs, mysterious sea creatures and a world beneath the waves.</p><div class="world-tag">BENEATH THE BLUE <span>↗</span></div></article>
+      <article class="world-card space"><div class="world-index">WORLD 03 <span>✦</span></div><div class="world-icon">✧</div><h3>Space</h3><p>Weave through comets, cosmic wonders and a galaxy full of unexpected adventures.</p><div class="world-tag">BEYOND THE STARS <span>↗</span></div></article></div>
+    </section>
+    <section class="section features" id="features"><div class="feature-copy"><div class="eyebrow">02 / THE ADVENTURE</div><h2>Easy to love.<br><span>Fun to master.</span></h2><p>Choose your Gliddie, find your rhythm and chase every glowing collectible. Each new level is another little adventure.</p><div class="feature-list"><div><span class="feature-number">01</span><span>75 levels across three vibrant worlds</span></div><div><span class="feature-number">02</span><span>Three playable Gliddies with unique charm</span></div><div><span class="feature-number">03</span><span>Secret Glimmers to discover</span></div><div><span class="feature-number">04</span><span>Three ways to play: Easy, Hard and Expert</span></div></div></div><div class="feature-visual" aria-label="Glowing collectible illustration"><div class="orbit orbit-1"></div><div class="orbit orbit-2"></div><div class="star-core">✦</div><span class="orbit-label label-a">COLLECT</span><span class="orbit-label label-b">DISCOVER</span><span class="orbit-label label-c">GLIDE</span></div></section>
+    <section class="launch" id="coming-soon"><div class="launch-glow"></div><div class="eyebrow">THE ADVENTURE IS JUST BEGINNING</div><h2>Ready to <em>glide?</em></h2><p>Gliddies is on its way to Android. Stay tuned for the adventure.</p><div class="launch-pill"><span class="status-dot"></span> COMING SOON TO GOOGLE PLAY</div></section>
   </main>
+  <footer><div class="footer-main"><div><a class="brand" href="/"><span class="brand-mark">✦</span> GLIDDIES<span>GAMES</span></a><p>Small worlds. Big adventures.</p></div><div class="footer-links"><a href="/privacy/">Privacy Policy</a><a href="mailto:gliddiesgames@gmail.com">Contact us</a></div></div><div class="footer-bottom"><span>© <span id="year">2026</span> Gliddiesgames. All rights reserved.</span><span>MADE WITH A LITTLE MAGIC ✦</span></div></footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
 </html>
